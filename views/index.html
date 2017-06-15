@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Calendar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="title-container">
+            <h3>Calendar</h3>
+        </div>
+        <div class="menu-items">
+            <div id="nav-menu" class="list">
+                <ul>
+                    <li>
+                        <i class="fa fa-envelope-o fa-lg"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        Name Namesson
+                        <i class="fa fa-user-circle fa-lg"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <aside class="side-menu">
+            <ul>
+                <li>
+                    <i class="fa fa-users fa-2x" aria-hidden="true"></i>
+                    <p>Manage</p>
+                </li>
+                <li class="active">
+                    <i class=" fa fa-tasks fa-2x" aria-hidden="true"></i>
+                    <p>Boards</p>
+                </li>
+                <li>
+                    <i class="fa fa-calendar-o fa-2x" aria-hidden="true"></i>
+                    <p>Schedule</p>
+                </li>
+                <li>
+                    <i class="fa fa-bar-chart fa-2x"></i>
+                    <p>Reports</p>
+                </li>
+                <li>
+                    <i class="fa fa-cog fa-2x"></i>
+                    <p>Settings</p>
+                </li>
+            </ul>
+        </aside>
+        <article class="content">
+            <div class="padding-div">
+                <div class="content-header">
+                    <h2>Board</h2>
+                    <div class="list">
+                        <ul>
+                            <li><i class="fa fa-plus fa-2x"></i></li>
+                            <li><i class="fa fa-user-circle fa-2x"></i></li>
+                            <li><i class="fa fa-user-circle fa-2x"></i></li>
+                            <li><i class="fa fa-user-circle fa-2x"></i></li>
+                            <li><i class="fa fa-user-circle fa-2x"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div id="card-color-1" class="cards">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h4>Backlog</h4>
+                                </div>
+                                <div class="card-menu"><i class="fa fa-ellipsis-v"></i></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="high-prio">High Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some more text that was added</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="medium-prio">Medium Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">Add task <i class="fa fa-plus"></i></div>
+                        </div>
+                    </div>
+
+
+
+                    <div id="card-color-2" class="cards">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h4>In Progress</h4>
+                                </div>
+                                <div class="card-menu"><i class="fa fa-ellipsis-v"></i></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="high-prio">High Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some more text that was added</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="high-prio">High Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some more text that was added</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="medium-prio">Medium Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do that is awesome</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">Add task <i class="fa fa-plus"></i></div>
+                        </div>
+                    </div>
+
+
+                    <div id="card-color-3" class="cards">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h4>Review</h4>
+                                </div>
+                                <div class="card-menu"><i class="fa fa-ellipsis-v"></i></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="high-prio">High Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some more text that was added</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="medium-prio">Medium Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do that is awesome</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">Add task <i class="fa fa-plus"></i></div>
+                        </div>
+                    </div>
+
+
+                    <div id="card-color-4" class="cards">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h4>Done</h4>
+                                </div>
+                                <div class="card-menu"><i class="fa fa-ellipsis-v"></i></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="high-prio">High Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some more text that was added</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="medium-prio">Medium Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some more text that was added</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="medium-prio">Medium Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do that is awesome</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">Add task <i class="fa fa-plus"></i></div>
+                        </div>
+                    </div>
+
+
+                    <div id="card-color-5" class="cards">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">
+                                    <h4>Other</h4>
+                                </div>
+                                <div class="card-menu"><i class="fa fa-ellipsis-v"></i></div>
+                            </div>
+                            <div class="card-body">
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="high-prio">High Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some more text that was added</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="low-prio">Low Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do wth some</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task">
+                                    <div class="medium-prio">Medium Priority</div>
+                                    <div class="task-description">
+                                        <p>Heres some task to do that is awesome</p>
+                                    </div>
+                                    <div class="task-info">
+                                        <div class="activity"><i class="fa fa-comment-o"></i> 1</div>
+                                        <div id="activity-list" class="list">
+                                            <ul>
+                                                <li> <i class="fa fa-plus"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                                <li> <i class="fa fa-user-circle"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">Add task <i class="fa fa-plus"></i></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </article>
+        <div class="add-board">
+            <h2>+</h2>
+        </div>
+        <article></article>
+    </section>
+    <footer>
+        &copy; Mikaela Törnlund
+    </footer>
+    <!-- JQUERY
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script> -->
+    <script src="../js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
